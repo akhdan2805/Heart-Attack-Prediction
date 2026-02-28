@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Load model
-model = joblib.load("artifacts/model.pkl")
+model = joblib.load("model.pkl")
 
 def main():
     st.title('Machine Learning Heart Attack Prediction Model Deployment')
@@ -44,4 +44,5 @@ def make_prediction(features):
     return prediction[0]
 
 if __name__ == '__main__':
+
     main()
